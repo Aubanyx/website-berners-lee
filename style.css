@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+main > section:first-of-type > img:first-of-type {
+    width: 10em;
+    margin: 1em;
+    border-radius: 100%;
+    border: 8px solid #cccccc;
+}
+
+main > section:first-of-type > h1:first-of-type {
+    color: #e16a67;
+    font-size: 1.6em;
+}
+
+main > section:first-of-type > h2:first-of-type {
+    color: #807e82;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+}
+
+main > section:first-of-type > p:first-of-type {
+    margin: 1em;
+    color: #807e82;
+    text-align: justify;
+}
+
+main > section:first-of-type > a:first-of-type {
+    padding: 0.8em 1.8em;
+    background-color: #e16a67;
+    border: 2px solid #e16a67;
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+}
+
+main > section:first-of-type > a:first-of-type:hover {
+    color: #e16a67;
+    background-color: white;
+}
+
+main > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+main > section:nth-child(2) > ul:first-of-type > li {
+    list-style-type: none;
+    text-align: center;
+    margin: 2em 0;
+}
+
+main > section:nth-child(2) > ul:first-of-type > li > a {
+    color: #807e82;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+}
+
+main > section:nth-child(2) > ul:first-of-type > li > a:hover {
+    color: #e16a67;
+}
+
+main > section:nth-child(2) > ul:first-of-type > li > a > svg {
+    color: #807e82;
+    font-size: 2em;
+    transition: all 0.5s ease-out;
+}
+
+main > section:nth-child(2) > ul:first-of-type > li > a > svg:hover {
+    color: #e16a67;
+}
+
+main > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+main > section:last-of-type > h2:first-of-type {
+    color: #807e82;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+main > section:last-of-type > h2:first-of-type > span:first-of-type {
+    background-color: #d3d3d3;
+}
+
+main > section:last-of-type > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+
+main > section:last-of-type > div > div:first-of-type > img {
+    width: 10em;
+}
+
+main > section:last-of-type > div > div:last-of-type > h3 {
+    text-align: center;
+    margin: 1em 0;
+    color: #807e82;
+}
+
+main > section:last-of-type > div > div:last-of-type > p {
+    text-align: justify;
+    color: #807e82;
+    margin: 0 1em;
+}
+
+
+/* BREAKPOINTS - START */
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 600px) {
+    main > section:nth-child(2) > ul:first-of-type {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main > section:nth-child(2) > ul:first-of-type > li {
+        margin: 1em;
+    }
+}
+
+/* SMALL DESKTOP */
+@media only screen and (min-width: 992px) {
+    main > section:first-of-type, main > section:nth-child(2), main > section:last-of-type {
+        width: 40%;
+    }
+
+    main > section:nth-child(2) > ul:first-of-type > li {
+        margin: 2em 2em;
+    }
+
+    main > section:nth-child(2) > ul:first-of-type > li > a > svg {
+        font-size: 3em;
+    }
+
+    main > section:last-of-type > div {
+        flex-direction: row;
+    }
+}
+/* LARGE DESKTOP */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* BREAKPOINTS - END */
