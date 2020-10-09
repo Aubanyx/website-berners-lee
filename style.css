@@ -159,11 +159,6 @@ main > section:last-of-type > div > div:last-of-type > p {
 
 /* BREAKPOINTS - START */
 
-/* MOBILE */
-@media only screen and (max-width: 600px) {
-
-}
-
 /* TABLET */
 @media only screen and (min-width: 600px) {
     main > section:nth-child(2) > ul:first-of-type {
@@ -193,10 +188,10 @@ main > section:last-of-type > div > div:last-of-type > p {
     main > section:last-of-type > div {
         flex-direction: row;
     }
-}
-/* LARGE DESKTOP */
-@media only screen and (min-width: 1200px) {
 
+    main > section:last-of-type > div {
+        margin: 2em;
+    }
 }
 
 /* BREAKPOINTS - END */
